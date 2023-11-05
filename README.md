@@ -113,6 +113,7 @@ As a bonus we had implemented a final simple application using gradio
 - **Gradio Notebook Development.html**: same as the notebook but for clean loading
 - **NYC Food Scrap Dropoff Chatbot.html**: same as the notebook but for clean loading
 - **README.md**: This file, explanation of the project.
+- **requirements.txt**: file for all the version used in this document.
 
 </details>
 
@@ -138,6 +139,15 @@ A detailed guide to fine tune a OpenAI model [can be found in this Datacamp post
 <details open>
 <summary> <b>Instructions for running the notebook and application<b></summary>
 
+**Create an Environment and install dependencies**
+
+    conda create -n chatbot python=3.8
+
+    conda activate chatbot
+
+    pip install -r requirements.txt
+
+
 **Changes for Running the notebooks:**
 - open the notebook of interest
 - find and add the Openai API Key
@@ -146,7 +156,7 @@ A detailed guide to fine tune a OpenAI model [can be found in this Datacamp post
 
 **Running the gradio app:**
 - open the *helpers/chatter.py*
-- add the OpenAI API Key on line 7 (*openai.api_key = 'sk-...')
+- add the OpenAI API Key on line 7 (*openai.api_key = 'sk-...'*)
 - save and run the application
     python app_gradio.py
 
